@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <br></br>
+
+    <h5 class="text-right"> <code>By: Ruchi Patel</code></h5>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    var count=0
+    var add = 0
+    setInterval(function() {
+        $('li img').hide()
+			if(count===4){count=0}
+			   count++
+               $('#rotate'+count).find('img').show()
+
+        $('ul li').hide()
+			if(add===4){add=0}
+			   add++
+               $('#spin'+add).find('li').show()
+				
+            }, 3000);
+
+
+        
+    </script>
+
+    <!-- li = list-->
+    <style>
+        .caption {
+    display: block;
+    }
+
+    li img{
+	display: none;
+    }
+
+    ul li{
+	display: none;
+    }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Ruchi's Courses</title>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="navbar-nav">
+            <a href="https://www.ryerson.ca/math/current-undergraduates/" class="nav-item nav-link active">Program</a>
+            <a href="https://www.ryerson.ca/math/current-undergraduates/program-courses/math-applications-program/" class="nav-item nav-link">Description</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Course Description</a>
+                <div class="dropdown-menu"><a href="https://www.ryerson.ca/calendar/2021-2022/courses/mathematics/MTH/260/" class="dropdown-item">MTH 260</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/mathematics/MTH/525/" class="dropdown-item">MTH 525</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/mathematics/MTH/640/" class="dropdown-item">MTH 640</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/mathematics/MTH/655/" class="dropdown-item">MTH 655</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/computer-science/CPS/406/" class="dropdown-item">CCPS 406</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/computer-science/CPS/501/" class="dropdown-item">CPS 501</a>
+                    <a href="https://www.ryerson.ca/calendar/2021-2022/courses/computer-science/CPS/530/" class="dropdown-item">CCPS 530</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div>
+     <li id="rotate1"><img src="books.jpg" width="1100" height="500" ></li>
+     <ul id="spin1"> 
+        <li>This picture represents the enormous stack of books I have this semseter. Fortunately, I have digital copies and hence dont need to hard the trees.</li>
+        </ul>
+
+     <li id="rotate2"><img src="writing.jpg" width="1100" height="500"></li>
+    <ul id="spin2"> 
+        <li>This picture represents the amount of homework I have to do each day. Sometimes I get bruses on my fingers from holding the pencil for so long. But its all worth it :)</li>
+        </ul>
+     <li id="rotate3"><img src="stress.jpg" width="1100" height="500"></li>
+     <ul id="spin3"> 
+        <li>Dealing with a lot of subjects gets overwhelming for me, and I under under tremendous amount of stress, have a few meltdowns aswell.</li>
+        </ul>
+
+     <li id="rotate4"><img src="stationary.jpg" width="1100" height="500"></li>
+     <ul id="spin4"> 
+        <li>I am a big fan of stationary. Having good writing utensils motivates me to do homework.</li>
+        </ul>
+    </div>
+
+    <br></br>
+    <br></br>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldtvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
