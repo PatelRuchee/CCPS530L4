@@ -1,8 +1,8 @@
+
 <!doctype html>
 <html lang="en">
   <head>
 
-    <title>Ruchi's Courses</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     var count=0
@@ -13,7 +13,7 @@
 			   count++
                $('#rotate'+count).find('img').show()
 
-        $('dl li').hide()
+        $('ol li').hide()
 			if(add===4){add=0}
 			   add++
                $('#spin'+add).find('li').show()
@@ -34,10 +34,11 @@
 	display: none;
     }
 
-    dl li{
+    ol li{
 	display: none;
     }
     </style>
+    <title>Ruchi's Courses</title>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -74,26 +75,29 @@
 
     <ul>
 
-     <li id="rotate1"><img src="books.jpg" width="1100" height="500" ></li>
-        <dl id="spin1">
-           <li> This picture represents the enormous stack of books I have this semseter. Fortunately, I have digital copies and hence dont need to hard the trees.</li>
-        </dl>
+     <li id="rotate1"><img src="books.jpg">1</li>
+        <ol id="spin1"> 
+            <li>This picture represents the enormous stack of books I have this semseter. Fortunately, I have digital copies and hence dont need to hard the trees.</li>
+        </ol>
 
-
-     <li id="rotate2"><img src="writing.jpg" width="1100" height="500"></li>
-        <dl id="spin2"> 
+     <li id="rotate2"><img src="writing.jpg">2</li>
+        <ol id="spin2"> 
             <li>This picture represents the amount of homework I have to do each day. Sometimes I get bruses on my fingers from holding the pencil for so long. But its all worth it :)</li>
-        </dl>
+        </ol>
 
-     <li id="rotate3"><img src="stress.jpg" width="1100" height="500"></li>
-        <dl id="spin3"> 
+
+
+     <li id="rotate3"><img src="stress.jpg">3</li>
+        <ol id="spin3"> 
             <li>Dealing with a lot of subjects gets overwhelming for me, and I under under tremendous amount of stress, have a few meltdowns aswell.</li>
-        </dl>
+        </ol>
 
-     <li id="rotate4"><img src="stationary.jpg" width="1100" height="500"></li>
-        <dl id="spin4"> 
+
+
+     <li id="rotate4"><img src="stationary.jpg">4</li>
+        <ol id="spin4"> 
             <li>I am a big fan of stationary. Having good writing utensils motivates me to do homework.</li>
-        </dl>
+        </ol>
     </ul>
 
 
